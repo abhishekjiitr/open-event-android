@@ -21,7 +21,7 @@ import java.net.URLEncoder;
  */
 public class SpeakerIntent {
     Speaker speaker;
-    public String url="dummy", reurl="dummy", error = "none";
+    public String url=""";
     public SpeakerIntent(Speaker speaker) {
         this.speaker = speaker;
     }
@@ -35,10 +35,8 @@ public class SpeakerIntent {
                     url = speaker.getLinkedin();
                     url = URLDecoder.decode(url);
                     String[] parts = url.split("&");
-                    for ( String s: parts )
-                    {
-                        if ( s.startsWith("url=") )
-                        {
+                    for ( String s: parts ){
+                        if ( s.startsWith("url=") ){
                             url = s.substring(4);
                         }
                     }
