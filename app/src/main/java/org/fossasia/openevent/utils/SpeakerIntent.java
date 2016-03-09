@@ -21,7 +21,7 @@ import java.net.URLEncoder;
  */
 public class SpeakerIntent {
     Speaker speaker;
-    public String url=""";
+    public String url="";
     public SpeakerIntent(Speaker speaker) {
         this.speaker = speaker;
     }
